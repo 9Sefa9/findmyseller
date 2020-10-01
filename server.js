@@ -11,7 +11,7 @@
 //um auf CSS und Javascript zuzugreifen.
 app.use(express.static("scripts"));
 app.use('/images', express.static(__dirname + '/images'));
-app.use('/videos', express.static(__dirname + '/videos'));
+//app.use('/videos', express.static(__dirname + '/videos'));
 app.get('/favico.ico', (req, res) => {
     res.sendStatus(404);
 });
